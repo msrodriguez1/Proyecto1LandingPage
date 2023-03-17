@@ -1,5 +1,5 @@
-.nav{
-    width:100%;
+.nav {
+    width: 100%;
     height: 40px;
     background-color: rgb(254, 239, 220);
     display: flex;
@@ -8,15 +8,15 @@
 
 }
 
-.logonav{
+.logonav {
     padding-left: 30px;
 
 }
 
-.btnnav{
-    width:300px;
+.btnnav {
+    width: 300px;
     height: 40px;
-    display:flex;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding-right: 30px;
@@ -24,10 +24,16 @@
 
 }
 
-.jumbotron{
+.btnnavsan {
+    display: none
+}
+
+.jumbotron {
     /* width:100%; */
     height: 70vh;
-    background-color: rgb(182, 214, 153);
+    background-image: url("./Brillos.png");
+    background-size: cover;
+    filter: brightness(80%);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -35,16 +41,22 @@
 
 }
 
-.titulo{
+.imgJumbo {
+    position: relative;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.titulo {
     height: 50vh;
     width: 25vw;
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-end;
 }
 
-.blog{
+.blog {
     height: 70vh;
     background-color: rgb(196, 244, 234);
     display: flex;
@@ -54,9 +66,9 @@
     padding: 2vw;
 }
 
-.entradas{
+.entradas {
     height: 60vh;
-    width: 90vw;
+    width: 95vw;
     background-color: rgb(229, 215, 241);
     display: flex;
     flex-direction: row;
@@ -65,14 +77,23 @@
 
 }
 
-.entradaBlog{
-    height:50vh;
-    width: 20vw;
+.entradaBlog {
+    height: 360px;
+    width: 290px;
     background-color: rgb(208, 243, 231);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:5px;
 }
 
+.imgblog {
+    height: 40%;
+    width: 80%
+}
 
-.productos{
+.productos {
     height: 70vh;
     background-color: rgb(238, 170, 197);
     display: flex;
@@ -82,15 +103,17 @@
     padding: 2vw;
 }
 
-.tituloProductos{
+.tituloProductos {
     width: 90vw;
-    display:flex;
+    display: flex;
     justify-content: flex-start;
-    
+    margin-left: 30px;
+
 }
 
 
-.catalogo{
+.catalogo {
+    position: relative;
     height: 50vh;
     width: 90vw;
     background-color: rgb(229, 215, 241);
@@ -98,20 +121,37 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    /* overflow-x: scroll; */
+    gap: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 10px;
 }
 
-.producto{
-    height:40vh;
-    width: 15vw;
+.producto {
+    height: 300px;
+    width: 200px;
     background-color: rgb(208, 243, 231);
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
 
+.imgProduct {
+    height: 220px;
+    width: 174px;
+}
 
-.footer{
+
+.producto button {
+    height: 20px;
+    width: 100px;
+    font-size: 10px;
+
+}
+
+.footer {
     height: 25vh;
     background-color: rgb(215, 241, 232);
     display: flex;
@@ -120,35 +160,303 @@
 
 }
 
-.ftrEnlaces{
+.ftrEnlaces {
+    width: 20vw;
     height: 20vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
+
 }
 
 
-.ftrRRSS{
+.ftrRRSS {
     display: flex;
     flex-direction: row;
+    gap: 3px;
+    flex-grow: 1;
 }
 
-.ftrSecciones{
-    width:30vw;
-    display:flex;
+.ftrSecciones {
+    width: 30vw;
+    display: flex;
     justify-content: space-around;
+    align-content: center;
 
 }
 
 
-.ftrSecciones h1{
+.ftrSecciones h1 {
     font-size: medium;
 }
 
 
-.ftrNosotros{
+.ftrNosotros {
+    /* height: 15vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-grow: 1;
+    align-items: center;
+}
 
-display:flex;
-flex-direction: column;
-justify-content: space-around;
+
+.ftrContacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-grow: 1;
+    align-items: center;
+}
+
+
+@media (max-width: 966px) and (min-width: 700px) {
+
+
+    .jumbotron {
+        /* width:100%; */
+        height: 50vh;
+    }
+
+    .blog {
+        height: 120vh;
+
+    }
+
+    .entradas {
+        display:flex;
+        height: 90%;
+        /* flex-direction: column; */
+        gap: 10px;
+        flex-wrap: wrap;
+
+    }
+
+
+    .productos {
+        height: 110vh;
+    }
+
+    .catalogo {
+        padding: 10px;
+        position: relative;
+        /* overflow-x: scroll; */
+        width: 80vw;
+        height: 90vh;
+        flex-wrap: wrap;
+        gap: 30px;
+
+    }
+
+
+    .producto {
+        height: 250px;
+        width: 200px;
+        /* flex:1; */
+    }
+
+
+}
+
+@media (max-width: 700px) and (min-width:531px) {
+
+
+    .jumbotron {
+        /* width:100%; */
+        height: 40vh;
+    }
+
+
+    .titulo {
+        height: 35vh;
+        width: 40vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .blog {
+        height: 100vh;
+
+    }
+
+    .entradas {
+        height: 90vh;
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+
+    }
+
+    .entradaBlog {
+        height: 200px;
+        width: 450px;
+    }
+
+
+    .tituloProductos {
+        width: 90vw;
+        display: flex;
+        justify-content: center;
+
+
+    }
+
+    .productos {
+
+        height: 90vh;
+
+    }
+
+    .catalogo {
+        padding: 10px;
+        position: relative;
+        width: 70vw;
+        height: 80vh;
+        /* flex-direction: column ; */
+        flex-wrap: wrap;
+    }
+
+    .producto {
+        height: 200px;
+        width: 160px;
+    }
+
+
+    .imgProduct {
+        height: 160px;
+        width: 128px;
+    }
+
+    .footer {
+        flex-direction: column;
+        height: 40vh;
+        padding: 20px;
+        justify-content: space-around;
+    }
+
+    .ftrEnlaces {
+        flex-grow: 1;
+        justify-content: space-between;
+
+    }
+
+    .ftrSecciones {
+        flex-grow: 1;
+        justify-content: space-between;
+    }
+
+
+}
+
+
+
+@media (max-width:530px) {
+    .btnnav {
+        display: none;
+    }
+
+    .btnnavsan {
+        display: flex;
+        margin-right: 10px;
+    }
+
+    .jumbotron {
+        /* width:100%; */
+        height: 40vh;
+    }
+
+
+    .titulo {
+        height: 35vh;
+        width: 40vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .blog {
+        height: 80vh;
+
+    }
+
+    .entradas {
+        height: 80vh;
+        width: 90%;
+        flex-direction: column;
+        gap: 9px;
+        /* overflow-y: scroll; */
+        padding-top: 5px;
+        padding-bottom: 5px;
+
+    }
+
+    .entradas :last-child {
+        display: none;
+    }
+
+    .entradaBlog {
+        height: 250px;
+        width: 200px;
+    }
+
+
+    .productos {
+
+        height: 110vh;
+
+    }
+
+    .tituloProductos {
+        width: 90vw;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .catalogo {
+        padding: 10px;
+        position: relative;
+        width: 70vw;
+        height: 100vh;
+        flex-direction: column;
+
+    }
+
+    .catalogo :last-child {
+        display: none;
+    }
+
+    .producto {
+        height: 200px;
+        width: 160px;
+    }
+
+
+    .imgProduct {
+        height: 160px;
+        width: 128px;
+    }
+
+
+
+    .footer {
+        flex-direction: column;
+        height: 50vh;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .ftrSecciones {
+
+        flex-direction: column;
+        height: 40vh;
+    }
+
+
 }
