@@ -13,4 +13,6 @@ Blog: En esta sección se encuentran artículos y recomendaciones sobre el cuiad
 
 Oferta de productos: La landing page incluye una sección que presenta los productos que se venden, con imágenes y descripciones detalladas de cada uno de ellos. También se muestra el precio y un botón para agregar el producto al carrito de compras.
 
+Footer: En esta sección se muestra información de contacto y RRSS.
+
 LINK MAQUETA: https://master--gleeful-pie-95c069.netlify.app/
