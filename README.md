@@ -1,5 +1,5 @@
 Landing de la página web de venta de plantas
-
+<img src="./assets/LandingMockUp.png" alt="Alt text" title="Maqueta de Landing">
 Este archivo README describe la landing page de una página web de venta de plantas. La landing page tiene como objetivo principal atraer a los visitantes y convertirlos en clientes potenciales para la tienda de plantas en línea.
 
 Contenido de la landing page
