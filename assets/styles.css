@@ -1,16 +1,21 @@
 .nav {
     width: 100%;
     height: 40px;
-    background-color: rgb(254, 239, 220);
+    background-color: rgb(142, 179, 158);
     display: flex;
     justify-content: space-between;
     align-items: center;
 
 }
 
+.leave{
+    padding-top: 5px;
+    width:80px;
+}
 .logonav {
-    padding-left: 30px;
-
+    padding-left: 20px;
+    position:relative;
+    width:40px;
 }
 
 .btnnav {
@@ -24,6 +29,14 @@
 
 }
 
+
+.link{
+
+    font-family: 'Open Sans', sans-serif;
+    color:#fff;
+
+}
+
 .btnnavsan {
     display: none
 }
@@ -31,9 +44,9 @@
 .jumbotron {
     /* width:100%; */
     height: 70vh;
-    background-image: url("./Brillos.png");
+    background-image: url("./ImagenLanding.png");
     background-size: cover;
-    filter: brightness(80%);
+    /* filter: brightness(80%); */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -48,17 +61,46 @@
 }
 
 .titulo {
-    height: 50vh;
-    width: 25vw;
+    height: 30vh;
+    width: 50vw;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-end;
 }
+.titulo h1{
+    color:rgb(94, 117, 104);
+}
 
+.titulo h4{
+    color:rgb(94, 117, 104);
+}
+.titulo p{
+    font-size: 14px;
+}
+
+.inputMail{
+    width: 180px;
+    height:20px;
+    border: none;
+    border-width: 0ch;
+    background-color:rgb(241, 241, 241) ;
+
+}
+
+.submit{
+    width:50px;
+    height: 25px;
+    background:rgb(111, 139, 123);
+	color: #fff;
+	border: 1px solid #eee;
+	border-radius: 20px;
+	box-shadow: 5px 5px 5px #eee;
+	text-shadow: none;    
+}
 .blog {
     height: 70vh;
-    background-color: rgb(196, 244, 234);
+    background-color: rgb(205, 220, 211);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -66,10 +108,14 @@
     padding: 2vw;
 }
 
+.tituloBlog{
+    color: #fff;
+}
+
 .entradas {
     height: 60vh;
     width: 95vw;
-    background-color: rgb(229, 215, 241);
+    background-color: rgb(205, 220, 211);
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -80,12 +126,19 @@
 .entradaBlog {
     height: 360px;
     width: 290px;
-    background-color: rgb(208, 243, 231);
+    background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding:5px;
+    padding:15px;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+        0 12.5px 10px rgba(0, 0, 0, 0.06),
+        0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+        0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+        0 100px 80px rgba(0, 0, 0, 0.12);
+
 }
 
 .imgblog {
@@ -93,9 +146,13 @@
     width: 80%
 }
 
+.ContenidoBlog{
+    margin-left: 10px;
+}
+
 .productos {
     height: 70vh;
-    background-color: rgb(238, 170, 197);
+    background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -106,9 +163,13 @@
 .tituloProductos {
     width: 90vw;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     margin-left: 30px;
 
+}
+
+.tituloProductos h1{
+   color: rgb(94, 117, 104);
 }
 
 
@@ -116,7 +177,7 @@
     position: relative;
     height: 50vh;
     width: 90vw;
-    background-color: rgb(229, 215, 241);
+    background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -131,11 +192,14 @@
 .producto {
     height: 300px;
     width: 200px;
-    background-color: rgb(208, 243, 231);
+    background-color:  rgb(222, 229, 225);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    padding:10px;
+    padding-top:15px;
+    border-radius: 5px;
 }
 
 .imgProduct {
@@ -145,15 +209,32 @@
 
 
 .producto button {
-    height: 20px;
+    height: 22px;
     width: 100px;
-    font-size: 10px;
+    font-size: 12px;
+    background:rgb(255, 255, 255);
+	color: rgb(97, 121, 107);
+    border-color: #fff;
+	border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+}
 
+
+.btncatalogo button{
+    width:80px;
+    height: 25px;
+    background:rgb(111, 139, 123);
+	color: #fff;
+	/* border: 1px solid #eee; */
+    border-color: #fff;
+	border-radius: 20px;
+	/* box-shadow: 5px 5px 5px #eee; */
+	text-shadow: none;    
 }
 
 .footer {
     height: 25vh;
-    background-color: rgb(215, 241, 232);
+    background-color: rgb(205, 220, 211);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -167,6 +248,7 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    gap:8px;
 
 }
 
@@ -174,7 +256,7 @@
 .ftrRRSS {
     display: flex;
     flex-direction: row;
-    gap: 3px;
+    gap: 6px;
     flex-grow: 1;
 }
 
@@ -201,6 +283,12 @@
     align-items: center;
 }
 
+.ftrLink{
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(0, 0, 0);
+}
+
 
 .ftrContacto {
     display: flex;
@@ -208,6 +296,33 @@
     justify-content: space-around;
     flex-grow: 1;
     align-items: center;
+}
+
+.ftrContacto button{
+    width:100px;
+    height: 25px;
+    background:rgb(255, 255, 255);
+	color: #343434;
+	border: 0px solid #eee;
+	/* border-radius: 20px; */
+	/* box-shadow: 5px 5px 5px #eee; */
+	text-shadow: none;  
+    font-family: 'Open Sans', sans-serif;
+}
+
+.rrss{
+    width:20px;
+    height: 20px;
+}
+
+
+.ContenidoBlog h3{
+    font-size: 18px;
+}
+
+
+.ContenidoBlog p{
+    font-size: 15px;
 }
 
 
@@ -253,13 +368,22 @@
     .producto {
         height: 250px;
         width: 200px;
-        /* flex:1; */
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        gap: 0px;
     }
-
+    .imgProduct {
+        height: 160px;
+        width: 128px;
+    }
 
 }
 
-@media (max-width: 700px) and (min-width:531px) {
+
+
+@media (max-width: 700px) and (min-width:530px) {
 
 
     .jumbotron {
@@ -269,12 +393,13 @@
 
 
     .titulo {
-        height: 35vh;
-        width: 40vw;
+        height: 25vh;
+        width: 50vw;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
+        margin:5px;
     }
 
     .blog {
@@ -283,6 +408,7 @@
     }
 
     .entradas {
+        width:90%;
         height: 90vh;
         flex-direction: column;
         gap: 10px;
@@ -292,8 +418,9 @@
     }
 
     .entradaBlog {
-        height: 200px;
-        width: 450px;
+        height: 180px;
+        width: 410px;
+        flex-direction:row;
     }
 
 
@@ -314,15 +441,15 @@
     .catalogo {
         padding: 10px;
         position: relative;
-        width: 70vw;
+        width: 90vw;
         height: 80vh;
         /* flex-direction: column ; */
         flex-wrap: wrap;
     }
 
     .producto {
-        height: 200px;
-        width: 160px;
+        height: 250px;
+        width: 200px;
     }
 
 
@@ -330,7 +457,6 @@
         height: 160px;
         width: 128px;
     }
-
     .footer {
         flex-direction: column;
         height: 40vh;
@@ -362,6 +488,8 @@
     .btnnavsan {
         display: flex;
         margin-right: 10px;
+        height:25px;
+        width:25px;
     }
 
     .jumbotron {
@@ -371,22 +499,23 @@
 
 
     .titulo {
-        height: 35vh;
-        width: 40vw;
+        height: 25vh;
+        width: 80vw;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
+        margin: 10px;
     }
 
     .blog {
-        height: 80vh;
+        height: 85vh;
 
     }
 
     .entradas {
         height: 80vh;
-        width: 90%;
+        width: 85%;
         flex-direction: column;
         gap: 9px;
         /* overflow-y: scroll; */
@@ -436,7 +565,6 @@
         width: 160px;
     }
 
-
     .imgProduct {
         height: 160px;
         width: 128px;
@@ -459,4 +587,31 @@
     }
 
 
+}
+
+h1 {
+    
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+h2{
+    
+    font-family: 'Open Sans', sans-serif;
+
+}
+h3 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h4 {
+        font-family: 'Open Sans', sans-serif;
+}
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.ftrContacto p{
+    font-size: 12px;
 }
