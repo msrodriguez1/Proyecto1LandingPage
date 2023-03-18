@@ -1,5 +1,5 @@
-Landing de la página web de venta de plantas
-<img src="./assets/LandingMockUp.png" alt="Alt text" title="Maqueta de Landing">
+                    Landing de la página web de venta de plantas
+
 Este archivo README describe la landing page de una página web de venta de plantas. La landing page tiene como objetivo principal atraer a los visitantes y convertirlos en clientes potenciales para la tienda de plantas en línea.
 
 Contenido de la landing page
@@ -17,3 +17,7 @@ Oferta de productos: La landing page incluye una sección que presenta los produ
 Footer: En esta sección se muestra información de contacto y RRSS.
 
 LINK MAQUETA: https://master--gleeful-pie-95c069.netlify.app/
+
+MockUp Inicial:
+
+<img src="./assets/LandingMockUp.png" alt="Alt text" title="Maqueta de Landing">
