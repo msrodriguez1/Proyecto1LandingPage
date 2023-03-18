@@ -7,32 +7,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./assets/styles.css" />
     <title>Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <nav class="nav">
-        <div class="logonav"><img src="logo" /></div>
+    <nav class="nav" id="inicio">
+        <div class="logonav"><img class="leave" src="./assets/logo.png" /></div>
         <div class="btnnav">
             <div class="link">Nosotros</div>
             <div class="link">Productos</div>
             <div class="link">Servicios</div>
             <div class="link">Cotiza</div>
         </div>
-        <div class="btnnavsan"><img src="sandiwch"></div>
+        <div class="btnnavsan"><img src="./assets/menu.png"></div>
     </nav>
     <section class="jumbotron">
         <div class="titulo">
-            <h1>Perfumes</h1>
-            <p>Un tributo a la belleza y la elegancia. La esencia misma de la tierra embotellada . Cada gota es una
-                invitación a vivir el arte a través de los sentidos.</p>
+            <h1>Tu casa en verde</h1>
+            <p>Agregar plantas a tu hogar mejora la calidad del aire, aumenta la productividad y agregan belleza y vida. Las plantas son una excelente forma de expresar tu personalidad y estilo.</p>
+            <h4>Dejanos tu mail para contactarte</h4>
+            <div class="contactMail">
+                <input class="inputMail" type="email" name="direccionemail" placeholder="Ej.: usuario@servidor.com">
+                <input class="submit" type="submit" value="Enviar">
+            </div>
         </div>
         <div class="imagen">
 
         </div>
     </section>
-    <section class="blog">
+    <section class="blog" id="blog">
         <div class="tituloBlog">
-            <h1>Blog</h1>
+            <!-- <h1>Blog</h1> -->
         </div>
         <div class="entradas">
             <div class="entradaBlog">
@@ -40,8 +47,7 @@
                 <div class="ContenidoBlog">
 
                     <h3>Así debes limpiar las hojas de tus plantas</h3>
-                    <p>skfjñslkdfñlsakmdñflasmdflsamdlfmsaldm
-                        dksnfksandflsknflsakdlkfmldskmflsamdf
+                    <p>Limpiar las hojas de las plantas es importante para mantenerlas sanas y atractivas.
                     </p>
                 </div>
             </div>
@@ -49,8 +55,7 @@
                 <img class="imgblog" src="./assets/Blog2.jpg" />
                 <div class="ContenidoBlog">
                     <h3>Cómo hacer un nido macetero</h3>
-                    <p>Deskfaskdfwaojflkadljflkdfma
-                        kdjfnlksadnñsalkmdsakmdñsadm
+                    <p> Hacer maceteros de plantas colgantes es una excelente manera de agregar un toque verde a tu hogar. 
                     </p>
                 </div>
 
@@ -59,27 +64,42 @@
                 <img class="imgblog" src="./assets/Blog3.jpg" />
                 <div class="ContenidoBlog">
                     <h3>Cuándo es correcto regar tus plantas</h3>
-                    <p>ñlsamflasdmflsmdlfmsdskjfksajndfsa
-                        sdkjnfksdjnfskdnflsdnklfnsdlñkfn
+                    <p>Para saber si una planta necesita agua, coloca tu dedo en la tierra cerca de la raíz. Si la tierra se siente seca, es hora de regarla.
                     </p>
                 </div>
             </div>
         </div>
     </section>
-    <section class="productos">
+    <section class="productos" id="catalogo">
         <div class="tituloProductos">
             <div>
                 <h1>Productos</h1>
             </div>
         </div>
         <div class="catalogo">
-            <div class="producto"><img class=imgProduct src="./assets/Planta1.jpg" /> <button>Agregar Carrito</button>
+            <div class="producto">
+                <img class=imgProduct src="./assets/Planta1.jpg" />
+                <p class="nombreProducto">Fitodendrios $15.990</p>
+                <!-- <p class="precio">$15.990</p> -->
+                <button>Agregar Carrito</button>
             </div>
-            <div class="producto"><img class=imgProduct src="./assets/Planta2.jpg" /> <button>Agregar Carrito</button>
+            <div class="producto">
+                <img class=imgProduct src="./assets/Planta2.jpg" />
+                <p class="nombreProducto">Ficus $13.990</p>
+                <!-- <p class="precio">$13.990</p> -->
+                <button>Agregar Carrito</button>
             </div>
-            <div class="producto"><img class=imgProduct src="./assets/Planta3.jpg" /> <button>Agregar Carrito</button>
+            <div class="producto">
+                <img class=imgProduct src="./assets/Planta3.jpg" />
+                <p class="nombreProducto">Lengua suegra $14.990</p>
+                <!-- <p class="precio">$14.990</p> -->
+                <button>Agregar Carrito</button>
             </div>
-            <div class="producto"><img class=imgProduct src="./assets/Planta4.jpg" /> <button>Agregar Carrito</button>
+            <div class="producto">
+                <img class=imgProduct src="./assets/Planta4.jpg" />
+                <p class="nombreProducto">Photus $17.990</p>
+                <!-- <p class="precio">$17.990</p> -->
+                <button>Agregar Carrito</button>
             </div>
         </div>
         <div class="btncatalogo"><button>Ver más</button></div>
@@ -87,27 +107,27 @@
     </section>
     <footer class="footer">
         <div class="ftrEnlaces">
-            <div class="ftrLogo"><img src="logo" /></div>
+            <div class="ftrLogo"><img class="leave" src="./assets/logo.png" /></div>
             <div class="ftrContacto"><button>Contáctanos</button></div>
             <div class="ftrRRSS">
-                <div><img src="Whatsapp" /></div>
-                <div><img src="Facebook" /></div>
-                <div><img src="Instagram" /></div>
-                <div><img src="Tiktok" /></div>
+                <div><img class="rrss" src="./assets/whatsapp.png" /></div>
+                <div><img class="rrss" src="./assets/facebook.png" /></div>
+                <div><img class="rrss" src="./assets/instagram.png" /></div>
+                <div><img class="rrss" src="./assets/tik-tok.png" /></div>
             </div>
         </div>
         <div class="ftrSecciones">
             <div class="ftrNosotros">
                 <h1>Nosotros</h1>
-                <a class="ftrLink" href="">Link1</a>
-                <a class="ftrLink" href="">Link2</a>
-                <a class="ftrLink" href="">Link3</a>
+                <a class="ftrLink" href="#inicio">Inicio</a>
+                <a class="ftrLink" href="#blog">Blog</a>
+                <a class="ftrLink" href="#catalogo">Catálogo</a>
             </div>
             <div class="ftrContacto">
                 <h1>Contacto</h1>
-                <p>mail</p>
-                <p>dirección</p>
-                <p>teléfonos</p>
+                <p>leave@gmail.com</p>
+                <p>Av. Holanda 916 Providencia</p>
+                <p>+5699453477</p>
             </div>
         </div>
     </footer>
