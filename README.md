@@ -12,3 +12,5 @@ Jumbotron: La landing page comienza con un encabezado que presenta la marca de l
 Blog: En esta sección se encuentran artículos y recomendaciones sobre el cuiado óptimo de plantas.
 
 Oferta de productos: La landing page incluye una sección que presenta los productos que se venden, con imágenes y descripciones detalladas de cada uno de ellos. También se muestra el precio y un botón para agregar el producto al carrito de compras.
+
+LINK MAQUETA: https://master--gleeful-pie-95c069.netlify.app/
